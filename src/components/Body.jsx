@@ -33,26 +33,25 @@ const data = [
 ];
 
 export default function Body() {
-
-
-
   return (
     <div>
       <div className="p-10 ">
         <h1 className="text-3xl font-bold">Products</h1>
         <div>
-          <div className="grid grid-flow-row grid-cols-4 gap-10">{data.map((product) => (
-    
-    <div className="border-solid border-2 p-10 m-8 " key={product.id}>
-      <img src={product.image} alt={product.name} />
-      <p>
-        <b className="text-2xl">{product.name}</b>
-        <i className="text-2xl"> Price :{product.price}</i>
-        <button className="bg-red-500 text-white text p-2 m-6 ">
-          Buy Now
-        </button>
-      </p>
-    </div> ))  }</div>
+          <div className="grid grid-flow-row grid-cols-4 gap-10">
+            {data.map((product) => (
+              <div className="border-solid border-2 p-10 m-8 " key={product.id}>
+                <img src={product.image} alt={product.name} />
+               
+                  <b className="text-2xl p-2 ">{product.name}</b>
+                  <i className="text-2xl p-2"> Price :{product.price}</i>
+                  <button className="bg-red-500 text-white text p-2 m-6 ">
+                    Buy Now
+                  </button>
+                
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
