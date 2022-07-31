@@ -1,19 +1,15 @@
-import React from 'react'
-
-import './App.css'
-import Body from './components/Body'
-import Header from './components/Header'
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import ProductList from "./components/ProductList";
 
 function App() {
-
-
   return (
-   <div>
-     <Header/>
-     <Body/>
-
+    <div>
+      <Header/>
+      <ProductList/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
