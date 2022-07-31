@@ -28,12 +28,12 @@ const data = [
 
 export default function Body() {
   const dataItems = data.map((product) => (
-    <li  className="border-solid border-2 p-10 " key={product.id}>
-      <img src= {GetImage(product)} alt={product.name} />
+    <li  className="border-solid border-2 p-10 m-8 " key={product.id}>
+      <img src= {product.image} alt={product.name} />
       <p>
         <b className="text-2xl">{product.name}</b>
         <i className="text-2xl">  Price :{product.price}</i>
-      <button className="bg-red-500 text-white p-14 ">Buy Now</button>
+      <button className="bg-red-500 text-white end p-2 m-6 ">Buy Now</button>
       </p>
 
     </li>   
