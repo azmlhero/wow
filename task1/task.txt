@@ -1,0 +1,207 @@
+<div>
+<header>
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+	</ul></header>
+
+	<div class="parent">
+		
+		
+		<div>
+		
+		
+			
+		<div class="c1child1 ">
+			<p>Ammar</p>
+		</div>		
+		<div class="c1child1 ">
+				<p>Ammar</p>
+		</div>
+		<div class="c1child1 ">
+				<p>Ammar</p>
+		</div>
+			
+		</div>
+		<div>
+		
+		
+			
+		<div class="c3child4 ">
+			<p>son of</p>
+		</div>		
+		<div class="c3child5 ">
+				<p>son of</p>
+		</div>
+		<div class="c3child5 ">
+				<p>son of</p>
+		</div>
+			
+		</div>
+		<div>
+		
+		
+			
+		<div class="c2child2 ">
+			<p>Zahid</p>
+		</div>		
+		<div class="c2child2 ">
+				<p>Zahid</p>
+		</div>
+		<div class="c2child3  ">
+				<p>Zahid</p>
+		</div>
+			
+		</div>
+	
+	</div>
+	
+	
+		
+	
+<footer>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida fringilla imperdiet. Mauris efficitur, tortor a dignissim ultrices, mauris erat vestibulum risus, id interdum elit tortor non odio. Donec fermentum massa eleifend, fermentum turpis a, ultrices leo. Proin gravida enim diam, ac porta neque ultricies a. Praesent at commodo erat, a fermentum neque. Vestibulum consectetur, dolor ac varius placerat, elit augue placerat lorem, vitae vulputate lorem metus sit amet orci. Morbi sagittis nunc quis egestas scelerisque. Curabitur at libero purus. Fusce in lectus felis. Suspendisse sed fermentum massa, non molestie est. Fusce eu volutpat elit. Mauris tincidunt tellus lorem, vel vehicula tortor mattis ac. Sed sollicitudin aliquam lorem. In at porttitor enim, non eleifend justo. Vivamus iaculis, dolor ac accumsan pretium, quam elit aliquam augue, id laoreet sapien mauris aliquam erat. Proin dignissim velit pellentesque euismod dictum.
+
+Donec mattis, ligula venenatis placerat dignissim, ante velit viverra dui, sit amet scelerisque augue enim eu nulla. Donec hendrerit scelerisque mauris, ac tincidunt arcu tempus non. Praesent sit amet erat vulputate nisl dictum aliquet non eget tortor. Quisque luctus vitae urna sed aliquet. Maecenas in felis sollicitudin lacus commodo semper ut quis lorem. Quisque vel faucibus velit, sed lobortis arcu. Quisque id neque lorem. In sapien mauris, ornare non turpis et, lacinia cursus massa. Suspendisse congue orci sit amet libero egestas, eget aliquam velit maximus. Proin pharetra est porta consectetur porttitor. Pellentesque malesuada lacus elit, a convallis ligula ultrices non. Praesent interdum condimentum augue, vitae fermentum nunc cursus quis. Donec posuere, dui at luctus ornare, nibh velit hendrerit urna, in mattis est sapien in quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+Duis sodales augue vitae ligula iaculis, tincidunt vulputate orci sollicitudin. Aliquam faucibus eget felis at convallis. Aliquam tristique enim a nisl convallis sodales. Sed arcu urna, dignissim ut sollicitudin eget, fringilla vitae tortor. Donec est ante, commodo at lorem nec, faucibus interdum lorem. Suspendisse aliquet eget felis sed dictum. Proin vel massa pulvinar leo tincidunt congue sit amet a augue. Donec laoreet sapien in tempor dignissim. Duis lacus odio, interdum non consectetur non, auctor ut nunc.
+
+Maecenas sagittis nibh sit amet ipsum suscipit dignissim. Nunc vel scelerisque arcu. Etiam augue quam, posuere a vulputate eget, aliquam maximus lacus. Mauris tincidunt tempor leo et dapibus. Fusce ac risus et arcu interdum aliquet. Fusce vitae libero sodales, mattis est eget, lacinia quam. Nulla facilisi. Ut nec mattis nunc. Donec quis iaculis magna.
+
+Ut eget laoreet lectus, eget scelerisque nisi. Sed ullamcorper ipsum odio, et dictum sapien pulvinar at. Aenean a velit vel velit dictum placerat. Nulla ligula magna, ornare non est ac, laoreet molestie diam. Vivamus sed lectus felis. Integer ut mauris libero. Etiam eros massa, dictum eu gravida nec, commodo sit amet metus. Nullam eu nulla id massa mattis mattis eu sit amet nunc. Nam mattis enim et erat ornare malesuada. Phasellus ullamcorper eu purus id cursus. In hac habitasse platea dictumst.</p>
+	</footer>
+	
+</div>
+
+CSS
+
+
+header{
+	background-color: coral;
+}
+ul{
+	
+	justify-content : flex-end;
+	display :flex;
+	
+}
+a {
+	margin-left : 40px;
+	text-decoration: none; 
+	color:black;
+	
+
+}
+
+a:hover {
+	 background-color: #a02020;
+}
+
+.parent{
+	display: flex;
+	margin-top: 30px;
+	justify-content:space-between;
+	
+}
+.c1parent {
+		
+}
+.c1child1{
+	border : solid;
+}
+.c2child2{
+	border : solid;
+	
+}
+
+.c2child3 {
+	border : solid;
+	margin-top:10px;
+}
+.c3child4 {
+	border : solid;
+	
+}
+.c3child5{
+	border : solid;
+	margin-top:10px;
+}
+
+
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	padding: 3rem;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	transition: all 725ms ease-in-out;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bolder;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 1rem;
+	color: black;
+}
+
+button {
+	cursor: pointer;
+	appearance: none;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid navy;
+	background-color: dodgerblue;
+	color: white;
+}
+
+footer{
+	
+	background-color: coral;
+	color:black;
+	
+}
+
+
+
+
+sKETCH 
+
+
+/*
+style > header navbar lag gaye 
+footer may links daldaynay hay
+
+
+sb flex ki height same hay  <flex row>S<div flex col>border  <div><div><div></div flex col>
+ <div flex col> all have own border and eq gap <div><div><div> </div flex col>
+ < div flex col>  2 ka same hay or 1 ka border change hay  End Flex row 
+
+<body>
+<div>
+<header/> 
+
+<footer/>
+<div>
+
+</body>
+*/
+
+
+
+
+
+
+
+
+
+
+
