@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.divBody {
+  
+  position: relative;
+  width: 32%;
+  height: 500px;
+  display: inline-block;
+ 
+}
+.divBody2{
+
+  position: relative;
+
+  width: 33%;
+  height: 90px;
+  border: 1px solid black;
+  color: black;
+  top: 15%;
+  left: 40%;
+  /* background-color :#fef8dd ; */
+ 
+ text-align: center;
+ justify-content: center;
+
+}
+.inputBody{
+  position:relative;
+  width:100px;
+  height:10px ; 
+  /* position: 10px 0px 0px 0px; */
+  
+color: black;
+  top:10px;
+  right:0px;
+  left:0px;
+  bottom:0px;
+  padding: 0.5em;
+  margin: 0.5em;
+
+  border: none;
+  border-radius: 3px;
+}
+.borderRow{
+margin: 0px 50px 0px 20px;
+}
+.square{
+
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+}
+.game-info{
+  margin: 0px 50px 200px 0px;
+  border: 2px solid black;
+  height: 50px;
+  width: 100px;
+  
+}

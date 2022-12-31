@@ -48,7 +48,7 @@ export default function ProductList() {
                   <button className="bg-red-500 text-white text p-2 m-6">
                     Buy Now
                   </button>
-                
+            
               </div>
             ))}
           </div>
