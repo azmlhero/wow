@@ -1,50 +1,96 @@
-import { useState, React } from "react";
 
-function Div(props) {
-  console.log(props);
-  const text = props.text;
 
-  return (
-    <div>
-      {!text ? (
-        <input type="checkbox" />
-      ) : (
-        <input
-          value={props.value}
-          onChange={(e) => props.onChange(e.target.value)}
-          placeholder="Ammar"
-          style={{ height: "20px", width: "100px" }}
-        />
-      )}
-    </div>
-  );
+import React from 'react'
+
+export default function ChildDiv(props) {
+
+//propsDrilling and data changing applied at all field at same time 
+
+    if(props.field){
+
+        return (
+
+            <div className="divBody2" style={props.style}>
+
+              <input  className="inputBody" placeholder='Enter any text' type='text'
+
+              value={props.value}
+
+              onChange={ (event) => props.onChange(event.target.value) } />
+
+            </div>
+
+          )
+
+    }
+
+
+
+    else{
+
+        return (
+
+            <div className="divBody2" style={props.style}>
+              <input   className="inputBody"  type='checkbox' checked={props.checked}
+
+              onClick={ (event) =>props.onClick(event.target.checked)}/>
+
+            </div>
+
+          )
+
+    }
+
+
+
 }
+// import { useState, React } from "react";
 
-export default function Div2(props) {
-  const display = props.display;
+// function Div(props) {
+//   console.log(props);
+//   const text = props.text;
 
-  return (
-    <div className="divBody2" style={props.style}>
-      <h2>hello I am {props.value}</h2>
+//   return (
+//     <div>
+//       {!text ? (
+//         <input type="checkbox" />
+//       ) : (
+//         <input
+//           value={props.value}
+//           onChange={(e) => props.onChange(e.target.value)}
+//           placeholder="Ammar"
+//           style={{ height: "20px", width: "100px" }}
+//         />
+//       )}
+//     </div>
+//   );
+// }
 
-      {display ? (
-        <Div
-          text={false}
-          className="inputBody"
-          onChange={props.onChange}
-          value={props.value}
-        />
-      ) : (
-        <Div
-          onChange={props.onChange}
-          value={props.value}
-          text={true}
-          className="inputBody"
-        />
-      )}
-    </div>
-  );
-}
+// export default function Div2(props) {
+//   const display = props.display;
+
+//   return (
+//     <div className="divBody2" style={props.style}>
+//       <h2>hello I am {props.value}</h2>
+
+//       {display ? (
+//         <Div
+//           text={false}
+//           className="inputBody"
+//           onChange={props.onChange}
+//           value={props.value}
+//         />
+//       ) : (
+//         <Div
+//           onChange={props.onChange}
+//           value={props.value}
+//           text={true}
+//           className="inputBody"
+//         />
+//       )}
+//     </div>
+//   );
+// }
 
 // var amrgreet= (name,age)=> {console.log(`${name} says Hi  and the age of ${name} is ${age} `)};
 // undefined

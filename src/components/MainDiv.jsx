@@ -1,16 +1,12 @@
 import { React, useState, useEffect } from "react";
-import Dropdown from "react-dropdown";
 
-import "react-dropdown/style.css";
-import State from "./State";
+import ChildDiv from "./newComponent/ChildDiv";
 
 import Div2 from "./Div2";
 
-import Country from "./Country";
-
 export default function MainDiv(props) {
-  const [countries, setCountries] = useState([]);
-  const [states, setStates] = useState([]);
+  const [text, setText] = useState("");
+  const [check, setCheck] = useState("");
 
   return (
     <div>
@@ -21,14 +17,33 @@ export default function MainDiv(props) {
         ></Div2>
         {/* <Country /> */}
 
-        <CountryDiv callbackMethod={(value) => setCountryvalue(value)} />
-
-        <StateDiv
-          value={getcountryvalue}
-          callbackMethods={(value) => setStateValue(value)}
+        <ChildDiv
+          onChange={(value) => setText(value)}
+          value={text}
+          style={{ backgroundColor: "black" }}
+          field={true}
         />
 
-        <CityDiv value={getcountryvalue} values={sta} />
+        <ChildDiv
+          onChange={(value) => setText(value)}
+          value={text}
+          style={{ margin: "", backgroundColor: "blue" }}
+          field={true}
+        />
+
+        <ChildDiv
+          onClick={(checked) => setCheck(checked)}
+          style={{ margin: "", backgroundColor: "grey" }}
+          field={false}
+          checked={check}
+        />
+         <ChildDiv
+          onClick={(checked) => setCheck(checked)}
+          checked={check}
+
+          style={{ margin: "", backgroundColor: "grey" }}
+          field={false}
+        />
       </div>
     </div>
   );
